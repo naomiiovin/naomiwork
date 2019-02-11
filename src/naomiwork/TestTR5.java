@@ -16,8 +16,9 @@ public class TestTR5 {
 		double restInEur = sumaInEur - sumaIntreagaInEur;
 		int restInRon = (int) (restInEur * curs);
 		System.out.println("Suma in EUR: " + sumaIntreagaInEur);
+		
 		System.out.println("Suma in RON: " + restInRon);
-
+		
 		scanner.close();
 
 	}
