@@ -15,9 +15,6 @@ public class TestBA8 {
 	 return sir; 
 	  }
 
- public static void main(String[] args) {
-	int[] sir = {1,2,3,4,5};
-	System.out.println(sir);
 }
 // public static void main(String[] args){
 //	  int[] sir ={1,2,3,4,5};
