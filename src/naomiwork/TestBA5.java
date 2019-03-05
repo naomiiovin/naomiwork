@@ -2,11 +2,10 @@ package naomiwork;
 
 public class TestBA5 {
 	public static int product(int[] sir) {
-		int i;
 
 		int suma = 0;
 		int product = 1;
-		for (i = 0; i < sir.length; i++) {
+		for (int i = 0; i < sir.length; i++) {
 
 			if (sir[i] != 0) {
 

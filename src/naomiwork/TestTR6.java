@@ -2,14 +2,14 @@ package naomiwork;
 
 public class TestTR6 {
 
-	public static double avg(int a, int b) {
+	public static double bla(int a, int b) {
 		double media = (a + b) / 2.0;
 		return media;
 
 	}
 
 	public static void main(String[] args) {
-		System.out.println(avg(5, 6));
+		System.out.println(bla(5, 6));
 
 	}
 }

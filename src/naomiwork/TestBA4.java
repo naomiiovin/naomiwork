@@ -2,9 +2,8 @@ package naomiwork;
 
 public class TestBA4 {
 	public static int max(int[] sir) {
-		int i;
 		int max = 0;
-		for (i = 0; i < sir.length; i++) {
+		for (int i = 0; i < sir.length; i++) {
 			if (sir[i] > max) {
 				max = sir[i];
 
