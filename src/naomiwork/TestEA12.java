@@ -2,13 +2,18 @@ package naomiwork;
 
 public class TestEA12 {
 	public static int[] removePosition(int[] arr, int pos) {
-		// public void removeElement(Object[] arr, int removedIdx) {
-		System.arraycopy(arr, pos + 1, arr, pos, arr.length - 1 - pos);
-		return arr;
-	}
+		if (pos < arr.length && pos >= 0 && arr.length > 0) {
+			int[] newArr = new int[arr.length - 1];
+			int counter = 0;
 
-	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 4, 5 };
-		System.out.println(removePosition(arr, 4));
+			for (int i = 0; i < arr.length; i++) {
+				if (i != pos) {
+					newArr[counter] = arr[i];
+					counter++;
+				}
+			}
+			return newArr;
+		}
+		return null;
 	}
 }

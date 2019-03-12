@@ -1,7 +1,5 @@
 package naomiwork;
 
-import java.util.Arrays;
-
 public class TestEA8 {
 	public static boolean contains(int[] a, int[] b) {
 		if (a.length == 0) {
@@ -10,14 +8,19 @@ public class TestEA8 {
 		if (b.length == 0) {
 			return true;
 		}
-		int[] newArr = new int[b.length];
-		for (int i = 0; i < a.length; i++) {
-			if (a[i] == b[0]) {
-				System.arraycopy(a, i, newArr, 0, b.length);
-			}
 
+		int indexB = 0;
+
+		for (int element : a) {
+			if (element == b[indexB]) {
+				indexB++;
+				if (indexB == b.length) {
+					return true;
+				}
+			}
 		}
-		return Arrays.equals(newArr, b);
+
+		return false;
 
 	}
 

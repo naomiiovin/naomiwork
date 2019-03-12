@@ -5,7 +5,7 @@ public class TestEA9 {
 		int count = 0;
 
 		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
+			for (int j = i + 1; j < arr.length; j++) {
 				if (j != i && (arr[i] + arr[j]) == n) {
 					count++;
 
@@ -13,7 +13,7 @@ public class TestEA9 {
 			}
 
 		}
-		return count / 2;
+		return count;
 	}
 
 	public static void main(String[] args) {
